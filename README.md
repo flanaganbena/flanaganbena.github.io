@@ -1,5 +1,4 @@
 ## Ben A. Flanagan 
-![useful image]({{ https://flanaganbena.github.io }}IMG_1604.jpg)
 ### evolution, genetic, ecology
 
 
