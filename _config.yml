@@ -1,3 +1,5 @@
 theme: jekyll-theme-tactile
 title: Ben A. Flanagan
 description: evolution, genetics, ecology
+github:
+  is_project_page: false
