@@ -1,7 +1,7 @@
-## Ben A. Flanagan
+## Ben A. Flanagan 
+![useful image]({{ https://flanaganbena.github.io }}IMG_1604.jpg)
 ### evolution, genetic, ecology
 
-![useful image]({{ https://flanaganbena.github.io }}IMG_1604.jpg)
 
 Hello! My name is Ben. I am a PhD sudent in Suzanne Edmands [lab](https://dornsife.usc.edu/labs/edmands/). 
 
