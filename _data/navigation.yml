@@ -1,15 +1,15 @@
 # Site navigation links
-- title: About
-  url: /
+- title: "About"
+  url: /about/
 
 #   
 # - title: Blog
 #   url: /posts/
   
-- title: Research
+- title: "Research"
   url: /
   
-- title: Home
+- title: "Home"
   url: /
 
 #  
