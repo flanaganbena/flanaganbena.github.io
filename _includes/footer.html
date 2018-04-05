@@ -8,8 +8,6 @@
     {% endif %}
     {% if site.author.github %}
       <li><a href="https://github.com/flanaganbena"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
   </ul>
 </div>
 
