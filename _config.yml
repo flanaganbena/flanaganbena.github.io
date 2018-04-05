@@ -98,10 +98,10 @@ analytics:
 # Site Author
 author:
   name             : "Ben A. Flanagan"
-  avatar           :  path of avatar image, e.g. "/assets/images/bohnwedding.jpg"
-  bio              : "I am an amazing person."
+  avatar           : "/assets/images/bohnwedding.jpg"
+  bio              : "evolution, ecology, "
   location         : "Los Angeles"
-  email            :
+  email            : "bflanaga@usc.edu"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -122,7 +122,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : https://twitter.com/ben_flanny
   vine             :
   weibo            :
   xing             :
