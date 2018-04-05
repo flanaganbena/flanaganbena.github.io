@@ -1,17 +1,12 @@
-# Site navigation links
-- title: "About"
-  url: /about/
-
-#   
-# - title: Blog
-#   url: /posts/
-  
-- title: "Research"
-  url: /
-  
-- title: "Home"
-  url: /
-
-#  
-# - title: All Tutorials
-#   url: /all_tutorials/
+# main links
+main:
+  - title: "About"
+    url: /about/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
