@@ -20,9 +20,9 @@ locale                   : "en-US"
 title                    : "Ben A. Flanagan"
 title_separator          : "-"
 name                     : "Ben A. Flanagan"
-description              : # "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+description              : "A personal website"
+url                      : "https://flanaganbena.github.io"
+baseurl                  : ""# the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -76,7 +76,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : ben_flanny
 facebook:
   username               :
   app_id                 :
