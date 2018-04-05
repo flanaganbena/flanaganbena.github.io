@@ -1,2 +1,0 @@
-# flanaganbena.github.io
-website
