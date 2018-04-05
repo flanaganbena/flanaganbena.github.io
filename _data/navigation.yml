@@ -6,11 +6,12 @@
 # - title: Blog
 #   url: /posts/
   
-  - title: Research
-    url: /
+- title: Research
+  url: /
   
 - title: Home
   url: /
-  
+
+#  
 # - title: All Tutorials
 #   url: /all_tutorials/
