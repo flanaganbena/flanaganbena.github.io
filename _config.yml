@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
@@ -266,3 +267,6 @@ defaults:
       comments: # true
       share: true
       related: true
+=======
+remote_theme: "mmistakes/minimal-mistakes"
+>>>>>>> ef9ad288d38f4d4f1ce3532ba6c5e5b2c9225ad0
