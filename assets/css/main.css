@@ -2724,16 +2724,17 @@
 		}
 
 	#header {
-		color: #d4e0ef;
+		color: lightgrey;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
-		line-height: 3.25em;
+		line-height: 0.25em;
 		position: absolute;
-		text-align: right;
+		text-align: center;
 		top: 4em;
 		width: 100%;
 		z-index: 10001;
+		text-shadow: 1px 1px 0px black;
 	}
 
 		#header .inner {
@@ -2933,28 +2934,31 @@
 /* Banner */
 
 	#banner {
-		padding: 12em 0 15em 0;
+		padding: 12em 0 12em 0;
 		background-image: url('../../images/banner.jpg');
-		background-size: cover;
+		background-color: #5385c1;
+		background-size: auto 70%;
 		background-position: top;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
-		border-top: 0.5em solid #5385c1;
+		border-top: 1em solid lightgrey;
+		text-shadow: 1px 1px 5px black;
 	}
 
 		#banner h1 {
 			font-size: 3.5em;
-			font-weight: 100;
+			font-weight: 80;
 			color: #fff;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
-			padding: 0;
+			padding: auto;
+			text-align: center;
 		}
 
 		#banner p {
 			font-size: 1em;
-			color: rgba(255, 255, 255, 0.55);
+			color: #fff;
 			margin-bottom: 1.75em;
 		}
 
