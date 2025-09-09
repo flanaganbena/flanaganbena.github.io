@@ -74,7 +74,7 @@
             width: 100%;
             height: 100%;
             /* Lighter gradient overlay */
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
         }
         
         .hero-content {
@@ -203,20 +203,27 @@
             padding: 20px;
         }
 
-        /* UPDATED HEADSHOT STYLING - More zoomed out */
-        .headshot {
+        /* COMPLETELY REVISED HEADSHOT APPROACH */
+        .headshot-wrapper {
             width: 260px;
             height: 260px;
             border-radius: 50%;
-            object-fit: cover;
-            object-position: 50% 70%; /* Adjusted to show more of the image */
+            overflow: hidden;
             border: 5px solid #3498db;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+
+        .headshot {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.1); /* Zoom out slightly */
             transition: transform 0.3s ease;
         }
 
-        .headshot:hover {
-            transform: scale(1.03);
+        .headshot-wrapper:hover .headshot {
+            transform: scale(1.15); /* Slight zoom on hover */
         }
 
         .contact-info {
@@ -313,7 +320,7 @@
                 align-items: center;
             }
 
-            .headshot {
+            .headshot-wrapper {
                 width: 220px;
                 height: 220px;
             }
@@ -490,7 +497,9 @@
         
         <div class="contact-content">
             <div class="headshot-container">
-                <img src="https://flanaganbena.github.io/images/head_shot.jpg" alt="Ben Flanagan Headshot" class="headshot">
+                <div class="headshot-wrapper">
+                    <img src="https://flanaganbena.github.io/images/head_shot.jpg" alt="Ben Flanagan Headshot" class="headshot">
+                </div>
             </div>
             
             <div class="contact-info">
