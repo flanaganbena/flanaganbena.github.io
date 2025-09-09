@@ -55,7 +55,7 @@
             color: #3498db;
         }
         
-        /* Hero Section with Banner */
+        /* Hero Section with Banner - LIGHTER OVERLAY */
         #hero {
             background-image: url('https://flanaganbena.github.io/images/banner.jpg');
             background-size: cover;
@@ -73,7 +73,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+            /* Lighter gradient overlay */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
         }
         
         .hero-content {
@@ -186,181 +187,105 @@
         }
         
         /* Contact Section */
-        .contact-header {
+        .contact-content {
             display: flex;
-            align-items: center;
-            margin-bottom: 2rem;
             flex-wrap: wrap;
+            padding: 40px 0;
+            align-items: center;
         }
-        
-        .headshot {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #3498db;
-            margin-right: 2rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .contact-info {
+
+        .headshot-container {
             flex: 1;
             min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
-        
-        .contact-links {
-            margin: 1.5rem 0;
+
+        /* UPDATED HEADSHOT STYLING - More zoomed out */
+        .headshot {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 50% 30%; /* Adjusted to show more of the image */
+            border: 5px solid #3498db;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
         }
-        
-        .contact-links a {
-            color: #3498db;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s;
+
+        .headshot:hover {
+            transform: scale(1.03);
+        }
+
+        .contact-info {
+            flex: 2;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 20px;
             font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
         }
 
-        .contact-links a:hover {
-            color: #2980b9;
-            text-decoration: underline;
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 25px 0;
         }
-        /* Contact Section */
-.contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 0;
-}
 
-.headshot-container {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+        .contact-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 2px solid #3498db;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
 
-.headshot {
-    width: 240px; /* Smaller width */
-    height: 240px; /* Smaller height */
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 20%; /* Higher positioning */
-    border: 5px solid #3498db;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-}
-
-.headshot:hover {
-    transform: scale(1.03);
-}
-
-.contact-info {
-    flex: 2;
-    min-width: 300px;
-    padding: 20px;
-}
-
-.contact-info p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-}
-
-.contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 25px 0;
-}
-
-.contact-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #3498db;
-    font-weight: 600;
-    padding: 10px 20px;
-    border: 2px solid #3498db;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    transform: scale(0.9); 
-}
-
-.contact-link:hover {
-    background: #3498db;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-}
-
-.contact-link i {
-    margin-right: 8px;
-    font-size: 1.2rem;
-}
-
-.address {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 4px solid #3498db;
-}
-
-.address h3 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.address p {
-    color: #555;
-    line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-    .contact-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .headshot {
-        width: 220px;
-        height: 220px;
-    }
-
-    .contact-info {
-        text-align: center;
-    }
-
-    .contact-links {
-        justify-content: center;
-    }
-}
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2.5rem;
-            background: #2c3e50;
+        .contact-link:hover {
+            background: #3498db;
             color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
         }
-        
-        /* Responsive Design */
+
+        .contact-link i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        .address {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+
+        .address h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .address p {
+            color: #555;
+            line-height: 1.5;
+        }
+
         @media (max-width: 900px) {
             #research ul {
                 columns: 1;
             }
-            
-            .contact-header {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .headshot {
-                margin: 0 auto 2rem;
-            }
         }
-        
+
         @media (max-width: 768px) {
             nav ul li {
                 display: block;
@@ -383,10 +308,31 @@
                 font-size: 1.8rem;
             }
             
-            .headshot {
-                width: 150px;
-                height: 150px;
+            .contact-content {
+                flex-direction: column;
+                align-items: center;
             }
+
+            .headshot {
+                width: 220px;
+                height: 220px;
+            }
+
+            .contact-info {
+                text-align: center;
+            }
+
+            .contact-links {
+                justify-content: center;
+            }
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            background: #2c3e50;
+            color: white;
         }
     </style>
 </head>
@@ -539,38 +485,40 @@
         <p><a href="https://scholar.google.com/citations?user=EiioDAYAAAAJ&hl=en" target="_blank">View my Google Scholar profile for a complete list <i class="fa-solid fa-up-right-from-square"></i></a></p>
     </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    
-    <div class="contact-content">
-        <div class="headshot-container">
-            <img src="https://flanaganbena.github.io/images/head_shot.jpg" alt="Ben Flanagan Headshot" class="headshot">
-        </div>
+    <section id="contact">
+        <h2>Contact</h2>
         
-        <div class="contact-info">            
-            <div class="contact-links">
-                <a href="mailto:flanaganbena@gmail.com" class="contact-link">
-                    <i class="fa-solid fa-envelope"></i> Email
-                </a>
-                <a href="https://github.com/flanaganbena" target="_blank" class="contact-link">
-                    <i class="fa-brands fa-github"></i> GitHub
-                </a>
-                <a href="https://scholar.google.com/citations?user=EiioDAYAAAAJ&hl=en" target="_blank" class="contact-link">
-                    <i class="fa-solid fa-graduation-cap"></i> Google Scholar
-                </a>
+        <div class="contact-content">
+            <div class="headshot-container">
+                <img src="https://flanaganbena.github.io/images/head_shot.jpg" alt="Ben Flanagan Headshot" class="headshot">
             </div>
             
-            <div class="address">
-                <h3>Address</h3>
-                <p>
-                    Department of Ecology and Evolutionary Biology<br>
-                    University of Connecticut<br>
-                    Storrs, CT 06269
-                </p>
+            <div class="contact-info">
+                <p>I can be reached via email or through the following professional networks. Feel free to reach out for collaboration opportunities, questions about my research, or anything else.</p>
+                
+                <div class="contact-links">
+                    <a href="mailto:flanaganbena@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                    <a href="https://github.com/flanaganbena" target="_blank" class="contact-link">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=EiioDAYAAAAJ&hl=en" target="_blank" class="contact-link">
+                        <i class="fa-solid fa-graduation-cap"></i> Google Scholar
+                    </a>
+                </div>
+                
+                <div class="address">
+                    <h3>Address</h3>
+                    <p>
+                        Department of Ecology and Evolutionary Biology<br>
+                        University of Connecticut<br>
+                        Storrs, CT 06269
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer>
         <p>&copy; 2025 Ben A. Flanagan</p>
