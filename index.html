@@ -4,9 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Flanagan - Evolutionary Biologist</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header and Navigation */
+        header {
+            background: #343a40;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #adb5bd;
+        }
+        
+        /* Hero Section with Banner */
+        #hero {
+            background-image: url('https://flanaganbena.github.io/images/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 8rem 1rem;
+            position: relative;
+        }
+        
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 4rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        section:nth-child(even) {
+            background-color: #e9ecef;
+        }
+        
+        h2 {
+            color: #212529;
+            border-bottom: 2px solid #6c757d;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* About Section */
+        #about p {
+            margin-bottom: 1rem;
+        }
+        
+        /* Research Interests */
+        #research ul {
+            padding-left: 20px;
+            margin-bottom: 1rem;
+        }
+        
+        #research li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Education */
+        .edu-item {
+            margin-bottom: 2rem;
+        }
+        
+        .edu-item h3 {
+            color: #495057;
+        }
+        
+        /* Publications */
+        .pub-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .pub-item:last-child {
+            border-bottom: none;
+        }
+        
+        .pub-item p {
+            margin: 0.5rem 0;
+        }
+        
+        /* Contact Section */
+        .contact-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s;
+        }
+        
+        .contact-links a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #343a40;
+            color: white;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+            
+            section {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -25,38 +208,31 @@
     <section id="hero">
         <div class="hero-content">
             <h1>Ben A. Flanagan</h1>
-            <p>Postdoctoral Scholar</p>
-            <p>Bolnick Lab, University of Connecticut</p>
-            <!-- You can add a link to the Bolnick Lab here later -->
-            <!-- <p><a href="https://bolnicklab.eeb.uconn.edu/" target="_blank">Bolnick Lab</a></p> -->
+            <p>Evolutionary Biologist & Geneticist</p>
+            <p>Postdoctoral Researcher, University of Connecticut</p>
         </div>
     </section>
 
-<section id="about">
-    <h2>Research Program</h2>
-    <p>I am an evolutionary biologist and geneticist studying how genetic variation shapes phenotypic adaptation. My research integrates population genomics, quantitative genetics, and comparative methods with experimental approaches to understand the mechanisms of rapid evolutionary change.</p>
-    
-    <p>I am currently a Postdoctoral Researcher in the <a href="https://bolnicklab.eeb.uconn.edu/" target="_blank">Bolnick Lab</a> at the University of Connecticut. My research uses two complementary approaches to study adaptation:
-        <ul>
-            <li>Investigating <strong>rapid contemporary adaptation</strong> using time-series genomic data from natural host-parasite systems to understand the fitness consequences of immigration and adaptive introgression, as shown in our recent preprint on <a href="https://www.biorxiv.org/content/10.1101/2025.08.27.672692v1" target="_blank">rapid genome-wide introgression</a>.</li>
-            <li>Employing <strong>comparative transcriptomics</strong> across diverse fish species to uncover macroevolutionary patterns in gene expression responses to immune stimuli.</li>
-        </ul>
-    </p>
+    <section id="about">
+        <h2>Research Program</h2>
+        <p>I am an evolutionary biologist and geneticist studying how genetic variation shapes phenotypic adaptation. My research integrates population genomics and quantitative genetics with experimental approaches to understand the mechanisms of rapid evolutionary change.</p>
+        
+        <p>I am currently a Postdoctoral Researcher in the <a href="https://bolnicklab.eeb.uconn.edu/" target="_blank">Bolnick Lab</a> at the University of Connecticut, where I study the genomic basis of rapid adaptation using time-series data from natural host-parasite systems and comparative phylogenetic analyses of gene expression across diverse fish species. This work includes investigating the fitness consequences of adaptive introgression, as detailed in our recent preprint on <a href="https://doi.org/10.1101/2025.08.27.672692" target="_blank">rapid genome-wide introgression</a>.</p>
 
-    <p>I earned my Ph.D. in Biological Sciences at the University of Southern California under Dr. Suzanne Edmands, where I developed the copepod <em>Tigriopus californicus</em> as a model system to study the mitonuclear genetic basis of sex differences in aging and stress tolerance. My doctoral work combined experimental approaches with forward-in-time genetic simulations to unravel how interactions between the nuclear and mitochondrial genomes influence complex life-history traits.</p>
+        <p>I earned my Ph.D. in Biological Sciences at the University of Southern California under Dr. Suzanne Edmands, where I developed the copepod <em>Tigriopus californicus</em> as a model system to study the mitonuclear genetic basis of sex differences in aging and stress tolerance. My doctoral work combined experimental approaches with forward-in-time genetic simulations to unravel how interactions between the nuclear and mitochondrial genomes influence complex life-history traits.</p>
 
-    <p>My research program is built on three core pillars:
-        <ul>
-            <li><strong>The Genomic Architecture of Rapid Adaptation</strong>, using natural and experimental populations to understand the signatures of selection, introgression, and the role of genetic redundancy in trait evolution.</li>
-            <li><strong>Mito-nuclear Interactions and Life-History Evolution</strong>, investigating how within-population mitochondrial variation contributes to sex-specific variation in fitness, longevity, and aging.</li>
-            <li><strong>Evolutionary Genomics of Invasive Species</strong>, employing species like the red alga <em>Gracilaria vermiculophylla</em> as natural experiments to study the genomic consequences of colonization and establishment.</li>
-        </ul>
-    </p>
+        <p>My research program is built on three core pillars:
+            <ul>
+                <li><strong>The Genomic Architecture of Rapid Adaptation</strong>, using natural and experimental populations to understand the signatures of selection, introgression, and the role of genetic redundancy in trait evolution.</li>
+                <li><strong>Mito-nuclear Interactions and Life-History Evolution</strong>, investigating how within-population mitochondrial variation contributes to sex-specific variation in fitness, longevity, and aging.</li>
+                <li><strong>Evolutionary Genomics of Invasive Species</strong>, employing species like the red alga <em>Gracilaria vermiculophylla</em> as natural experiments to study the genomic consequences of colonization and establishment.</li>
+            </ul>
+        </p>
 
-    <p>My work is supported by a combination of experimental and computational approaches, and I am passionate about mentoring the next generation of scientists in quantitative biology and genomics.</p>
+        <p>My work is supported by a combination of experimental and computational approaches, and I am passionate about mentoring the next generation of scientists in quantitative biology and genomics.</p>
 
-    <p>I hold an M.S. in Marine Biology from the College of Charleston, where I worked with Dr. Erik Sotka on the population genomics of marine invasions, and a B.S. in Genetics from Clemson University.</p>
-</section>
+        <p>I hold an M.S. in Marine Biology from the College of Charleston, where I worked with Dr. Erik Sotka on the population genomics of marine invasions, and a B.S. in Genetics from Clemson University.</p>
+    </section>
 
     <section id="research">
         <h2>Research Interests</h2>
@@ -83,78 +259,27 @@
             <p>Thesis Advisor: Dr. Erik Sotka</p>
         </div>
         <div class="edu-item">
-            <h3>B.S. in Genetics and Wildlife Fisheries Biology</h3>
+            <h3>B.S. in Genetics, Minor in Wildlife Fisheries Biology</h3>
             <p><strong>Clemson University</strong>, Clemson, SC (2014)</p>
         </div>
     </section>
-    
-<section id="publications">
-    <h2>Publications</h2>
-    <p><small><em>Underline indicates corresponding author(s). † indicates undergraduate mentee coauthor.</em></small></p>
 
-    <!-- 2025 Preprint -->
-    <div class="pub-item">
-        <p><u>Flanagan, B.A.</u>, Padhiar, A., Peng, F., Quraishi, S., Roth-Monzón, A.J., Gilani, F., ... & Bolnick, D.I. (2025). Rapid genome-wide introgression reveals fitness advantage of immigrant genotypes. <em>bioRxiv</em>, 2025.08.27.672692. <em>Submitted to Science.</em> <a href="https://doi.org/10.1101/2025.08.27.672692" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> bioRxiv</a></p>
-    </div>
-
-    <!-- 2024 Publications -->
-    <div class="pub-item">
-        <p>O’Donnell, S.E., Ruggeri, M., Blanco-Pimentel, M., Morikawa, M.K., Harms, E., ... <strong>Flanagan, B.A.</strong>, ... & Baums, I.B. (2024). Species-specific patterns of population genetic structure differ on a microgeographic scale. <em>Coral Reefs</em>, 44(1), 353-358. <a href="https://doi.org/10.1007/s00338-024-02540-6" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <div class="pub-item">
-        <p>Flanagan, B.A., Fuess, L.E., Vrtilek, M., Roth-Monzón, A., & Bolnick, D.I. (2024). Macroevolutionary changes in gene expression response to an immune stimulus across the diversity of fishes. <em>bioRxiv</em>. <strong>Accepted at <em>Molecular Biology and Evolution</em>.</strong> <a href="https://doi.org/10.1101/2024.10.24.619990" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> bioRxiv</a></p>
-    </div>
-
-    <div class="pub-item">
-        <p>Edmands, S., Denova, J.R., <strong>Flanagan, B.A.</strong>, Jah, M., & Applebaum, S.L. (2024). Mitonuclear effects on sex ratio persist across generations in interpopulation hybrids. <em>Journal of Evolutionary Biology</em>, 37(11), 1386-1393. <a href="https://doi.org/10.1093/jeb/voae037" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <div class="pub-item">
-        <p>Li, N., <strong>Flanagan, B.A.</strong>, & Edmands, S. (2024). The role of mitochondria in sex- and age-specific gene expression in a species without sex chromosomes. <em>Proceedings of the National Academy of Sciences</em>, 121(24), e2321267121. <a href="https://doi.org/10.1073/pnas.2321267121" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <!-- 2023 Publication -->
-    <div class="pub-item">
-        <p>Watson, E.T., <strong>Flanagan, B.A.</strong>, Pascar, J.A., & Edmands, S. (2023). Mitochondrial effects on fertility and longevity in Tigriopus californicus contradict predictions of the mother’s curse hypothesis. <em>Proceedings of the Royal Society B: Biological Sciences</em>, 289(1987), 20221211. <a href="https://doi.org/10.1098/rspb.2022.1211" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <!-- 2022 Publications -->
-    <div class="pub-item">
-        <p><u>Flanagan, B.A.</u>, Huang, E., & Edmands, S. (2022). Exogenous oxidative stressors elicit differing age and sex effects in Tigriopus californicus. <em>Experimental Gerontology</em>, 166, 111871. <a href="https://doi.org/10.1016/j.exger.2022.111871" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <div class="pub-item">
-        <p>Murren, C.J., Krueger-Hadfield, S.A., Clark, A.J., <strong>Flanagan, B.A.</strong>, Lees, L.E., & Sotka, E.E. (2022). Individuals from non-native populations are stronger and bigger than individuals from native populations of a widespread seaweed. <em>Biological Invasions</em>, 24(7), 2169–2180. <a href="https://doi.org/10.1007/s10530-022-02758-x" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <div class="pub-item">
-        <p>Li, N., <strong>Flanagan, B.A.</strong>, & Edmands, S. (2022). Food deprivation exposes sex-specific trade-offs between stress tolerance and life span in the copepod Tigriopus californicus. <em>Ecology and Evolution</em>, 12(4), e8822. <a href="https://doi.org/10.1002/ece3.8822" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <!-- 2021 Publications -->
-    <div class="pub-item">
-        <p><u>Flanagan, B.A.</u>, Li, N., & Edmands, S. (2021). Mitonuclear interactions alter sex-specific longevity in a species without sex chromosomes. <em>Proceedings of the Royal Society B: Biological Sciences</em>, 288(1962), 20211813. <a href="https://doi.org/10.1098/rspb.2021.1813" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <div class="pub-item">
-        <p><u>Flanagan, B.A.</u>, Krueger-Hadfield, S.A., Murren, C.J., Nice, C.C., Strand, A.E., & Sotka, E.E. (2021). Founder effects shape linkage disequilibrium and genomic diversity of a partially clonal invader. <em>Molecular Ecology</em>, 30(9), 1962–1978. <a href="https://doi.org/10.1111/mec.15870" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <div class="pub-item">
-        <p>Krueger-Hadfield, S.A., <strong>Flanagan, B.A.</strong>, Godfroy, O., Hill-Spanik, K.M., Nice, C.C., Murren, C.J., Strand, A.E., & Sotka, E.E. (2021). Using RAD-seq to develop sex-linked markers in a haplodiplontic alga. <em>Journal of Phycology</em>, 57(1), 279–294. <a href="https://doi.org/10.1111/jpy.13104" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <!-- 2020 Publication -->
-    <div class="pub-item">
-        <p>Li, N., <strong>Flanagan, B.A.</strong>, Partridge, M.K., Huang, E.J., & Edmands, S. (2020). Sex differences in early transcriptomic responses to oxidative stress in the copepod Tigriopus californicus. <em>BMC Genomics</em>, 21(1), 759. <a href="https://doi.org/10.1186/s12864-020-07143-3" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-
-    <!-- 2018 Publication -->
-    <div class="pub-item">
-        <p>Sotka, E.E., Baumgardner, A.W., Bippus, P.M., Destombe, C., Duermit, E.A., Endo, H., <strong>Flanagan, B.A.</strong>, ... & Krueger-Hadfield, S.A. (2018). Combining niche shift and population genetic analyses predicts rapid phenotypic evolution during invasion. <em>Evolutionary Applications</em>, 11(5), 781–793. <a href="https://doi.org/10.1111/eva.12594" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
-    </div>
-</section>
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <p><small><em>Underline indicates corresponding author(s). † indicates undergraduate mentee coauthor.</em></small></p>
+        
+        <div class="pub-item">
+            <p>Watson, E.T., <strong>Flanagan, B.A.</strong>, Pascar, J.A. and Edmands, S., 2022. Mitochondrial effects on fertility and longevity in <em>Tigriopus californicus</em> contradict predictions of the mother's curse hypothesis. <em>bioRxiv</em>. Under review at <em>Proceedings of the Royal Society B</em>.</p>
+        </div>
+        <div class="pub-item">
+            <p><u>Flanagan, B.A.</u>, Huang, E.* and Edmands S. 2022. Exogenous oxidative stressors illicit differing age and sex effects in <em>Tigriopus californicus</em>. <em>Experimental Gerontology</em>. 166, p.111871. <a href="https://doi.org/10.1016/j.exger.2022.111871" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></p>
+        </div>
+        <div class="pub-item">
+            <p>Li, N., <strong>Flanagan, B.A.</strong> and Edmands, S., 2022. Food deprivation exposes sex-specific trade-offs between stress tolerance and life span in the copepod <em>Tigriopus californicus</em>. <em>Ecology and Evolution</em>, 12(4), p.e8822. <a href="https://doi.org/10.1002/ece3.8822" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></p>
+        </div>
+        
+        <p><a href="https://scholar.google.com/citations?user=EiioDAYAAAAJ&hl=en" target="_blank">View my Google Scholar profile for a complete list <i class="fa-solid fa-up-right-from-square"></i></a></p>
+    </section>
 
     <section id="contact">
         <h2>Contact</h2>
@@ -164,7 +289,6 @@
                 <a href="mailto:flanaganbena@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a> |
                 <a href="https://github.com/flanaganbena" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a> |
                 <a href="https://scholar.google.com/citations?user=EiioDAYAAAAJ&hl=en" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
-                <!-- You can add Twitter, LinkedIn, or your lab profile later -->
             </p>
         </div>
         <p><strong>Address:</strong><br>
