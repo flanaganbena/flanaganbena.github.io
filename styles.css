@@ -1,0 +1,113 @@
+/* Basic Reset & Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header and Navigation */
+header {
+    background: #343a40;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #adb5bd;
+}
+
+/* Section Styling */
+section {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Headings */
+h2 {
+    color: #212529;
+    border-bottom: 2px solid #6c757d;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+/* Publication Items */
+.pub-item {
+    margin-bottom: 1rem;
+}
+
+.pub-item p {
+    margin: 0.5rem 0;
+}
+
+/* Education Items */
+.edu-item {
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Links */
+.contact-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #343a40;
+    color: white;
+}
