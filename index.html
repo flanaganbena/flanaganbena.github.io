@@ -246,38 +246,231 @@
         </ul>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="edu-item">
-            <h3>Ph.D. in Biological Sciences</h3>
-            <p><strong>University of Southern California</strong>, Los Angeles, CA (2022)</p>
-            <p>Thesis Advisor: Dr. Suzanne Edmands</p>
-        </div>
-        <div class="edu-item">
-            <h3>M.S. in Marine Biology (with Honors)</h3>
-            <p><strong>College of Charleston</strong>, Charleston, SC (2017)</p>
-            <p>Thesis Advisor: Dr. Erik Sotka</p>
-        </div>
-        <div class="edu-item">
-            <h3>B.S. in Genetics, Minor in Wildlife Fisheries Biology</h3>
-            <p><strong>Clemson University</strong>, Clemson, SC (2014)</p>
-        </div>
-    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Flanagan - Education Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        .edu-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            background: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .edu-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .edu-item h3 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .edu-item p {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .advisor {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+        
+        .advisor a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .advisor a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        
+        .university {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .year {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .edu-item {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ben A. Flanagan</h1>
+            <p>Evolutionary Biologist & Geneticist</p>
+        </header>
+        
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="edu-item">
+                <h3>Ph.D. in Biological Sciences</h3>
+                <p><span class="university">University of Southern California</span>, Los Angeles, CA</p>
+                <p><span class="year">2022</span></p>
+                <p class="advisor">Advisor: <a href="https://dornsife.usc.edu/edmands/" target="_blank">Dr. Suzanne Edmands</a></p>
+            </div>
+            
+            <div class="edu-item">
+                <h3>M.S. in Marine Biology with Honors</h3>
+                <p><span class="university">College of Charleston</span>, Charleston, SC</p>
+                <p><span class="year">2017</span></p>
+                <p class="advisor">Advisor: <a href="https://blogs.charleston.edu/sotkae/" target="_blank">Dr. Erik Sotka</a></p>
+            </div>
+            
+            <div class="edu-item">
+                <h3>B.S. in Genetics with Minor in Wildlife Fisheries Biology</h3>
+                <p><span class="university">Clemson University</span>, Clemson, SC</p>
+                <p><span class="year">2014</span></p>
+                <p class="advisor">Advisor: Dr. Julia Frugoli, Emeritus</p>
+            </div>
+        </section>
 
     <section id="publications">
-        <h2>Selected Publications</h2>
+        <h2>Publications</h2>
         <p><small><em>Underline indicates corresponding author(s). † indicates undergraduate mentee coauthor.</em></small></p>
-        
+
+        <!-- 2025 Preprint -->
         <div class="pub-item">
-            <p>Watson, E.T., <strong>Flanagan, B.A.</strong>, Pascar, J.A. and Edmands, S., 2022. Mitochondrial effects on fertility and longevity in <em>Tigriopus californicus</em> contradict predictions of the mother's curse hypothesis. <em>bioRxiv</em>. Under review at <em>Proceedings of the Royal Society B</em>.</p>
+            <p><u>Flanagan, B.A.</u>, Padhiar, A., Peng, F., Quraishi, S., Roth-Monzón, A.J., Gilani, F., ... & Bolnick, D.I. (2025). Rapid genome-wide introgression reveals fitness advantage of immigrant genotypes. <em>bioRxiv</em>, 2025.08.27.672692. <em>Submitted to Science.</em> <a href="https://doi.org/10.1101/2025.08.27.672692" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> bioRxiv</a></p>
         </div>
+
+        <!-- 2024 Publications -->
         <div class="pub-item">
-            <p><u>Flanagan, B.A.</u>, Huang, E.* and Edmands S. 2022. Exogenous oxidative stressors illicit differing age and sex effects in <em>Tigriopus californicus</em>. <em>Experimental Gerontology</em>. 166, p.111871. <a href="https://doi.org/10.1016/j.exger.2022.111871" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></p>
+            <p>O’Donnell, S.E., Ruggeri, M., Blanco-Pimentel, M., Morikawa, M.K., Harms, E., ... <strong>Flanagan, B.A.</strong>, ... & Baums, I.B. (2024). Species-specific patterns of population genetic structure differ on a microgeographic scale. <em>Coral Reefs</em>, 44(1), 353-358. <a href="https://doi.org/10.1007/s00338-024-02540-6" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
         </div>
+
         <div class="pub-item">
-            <p>Li, N., <strong>Flanagan, B.A.</strong> and Edmands, S., 2022. Food deprivation exposes sex-specific trade-offs between stress tolerance and life span in the copepod <em>Tigriopus californicus</em>. <em>Ecology and Evolution</em>, 12(4), p.e8822. <a href="https://doi.org/10.1002/ece3.8822" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></p>
+            <p>Flanagan, B.A., Fuess, L.E., Vrtilek, M., Roth-Monzón, A., & Bolnick, D.I. (2024). Macroevolutionary changes in gene expression response to an immune stimulus across the diversity of fishes. <em>bioRxiv</em>. <strong>Accepted at <em>Molecular Biology and Evolution</em>.</strong> <a href="https://doi.org/10.1101/2024.10.24.619990" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> bioRxiv</a></p>
         </div>
-        
+
+        <div class="pub-item">
+            <p>Edmands, S., Denova, J.R., <strong>Flanagan, B.A.</strong>, Jah, M., & Applebaum, S.L. (2024). Mitonuclear effects on sex ratio persist across generations in interpopulation hybrids. <em>Journal of Evolutionary Biology</em>, 37(11), 1386-1393. <a href="https://doi.org/10.1093/jeb/voae037" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <div class="pub-item">
+            <p>Li, N., <strong>Flanagan, B.A.</strong>, & Edmands, S. (2024). The role of mitochondria in sex- and age-specific gene expression in a species without sex chromosomes. <em>Proceedings of the National Academy of Sciences</em>, 121(24), e2321267121. <a href="https://doi.org/10.1073/pnas.2321267121" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <!-- 2023 Publication -->
+        <div class="pub-item">
+            <p>Watson, E.T., <strong>Flanagan, B.A.</strong>, Pascar, J.A., & Edmands, S. (2023). Mitochondrial effects on fertility and longevity in Tigriopus californicus contradict predictions of the mother's curse hypothesis. <em>Proceedings of the Royal Society B: Biological Sciences</em>, 289(1987), 20221211. <a href="https://doi.org/10.1098/rspb.2022.1211" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <!-- 2022 Publications -->
+        <div class="pub-item">
+            <p><u>Flanagan, B.A.</u>, Huang, E., & Edmands, S. (2022). Exogenous oxidative stressors elicit differing age and sex effects in Tigriopus californicus. <em>Experimental Gerontology</em>, 166, 111871. <a href="https://doi.org/10.1016/j.exger.2022.111871" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <div class="pub-item">
+            <p>Murren, C.J., Krueger-Hadfield, S.A., Clark, A.J., <strong>Flanagan, B.A.</strong>, Lees, L.E., & Sotka, E.E. (2022). Individuals from non-native populations are stronger and bigger than individuals from native populations of a widespread seaweed. <em>Biological Invasions</em>, 24(7), 2169–2180. <a href="https://doi.org/10.1007/s10530-022-02758-x" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <div class="pub-item">
+            <p>Li, N., <strong>Flanagan, B.A.</strong>, & Edmands, S. (2022). Food deprivation exposes sex-specific trade-offs between stress tolerance and life span in the copepod Tigriopus californicus. <em>Ecology and Evolution</em>, 12(4), e8822. <a href="https://doi.org/10.1002/ece3.8822" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <!-- 2021 Publications -->
+        <div class="pub-item">
+            <p><u>Flanagan, B.A.</u>, Li, N., & Edmands, S. (2021). Mitonuclear interactions alter sex-specific longevity in a species without sex chromosomes. <em>Proceedings of the Royal Society B: Biological Sciences</em>, 288(1962), 20211813. <a href="https://doi.org/10.1098/rspb.2021.1813" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <div class="pub-item">
+            <p><u>Flanagan, B.A.</u>, Krueger-Hadfield, S.A., Murren, C.J., Nice, C.C., Strand, A.E., & Sotka, E.E. (2021). Founder effects shape linkage disequilibrium and genomic diversity of a partially clonal invader. <em>Molecular Ecology</em>, 30(9), 1962–1978. <a href="https://doi.org/10.1111/mec.15870" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <div class="pub-item">
+            <p>Krueger-Hadfield, S.A., <strong>Flanagan, B.A.</strong>, Godfroy, O., Hill-Spanik, K.M., Nice, C.C., Murren, C.J., Strand, A.E., & Sotka, E.E. (2021). Using RAD-seq to develop sex-linked markers in a haplodiplontic alga. <em>Journal of Phycology</em>, 57(1), 279–294. <a href="https://doi.org/10.1111/jpy.13104" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <!-- 2020 Publication -->
+        <div class="pub-item">
+            <p>Li, N., <strong>Flanagan, B.A.</strong>, Partridge, M.K., Huang, E.J., & Edmands, S. (2020). Sex differences in early transcriptomic responses to oxidative stress in the copepod Tigriopus californicus. <em>BMC Genomics</em>, 21(1), 759. <a href="https://doi.org/10.1186/s12864-020-07143-3" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
+        <!-- 2018 Publication -->
+        <div class="pub-item">
+            <p>Sotka, E.E., Baumgardner, A.W., Bippus, P.M., Destombe, C., Duermit, E.A., Endo, H., <strong>Flanagan, B.A.</strong>, ... & Krueger-Hadfield, S.A. (2018). Combining niche shift and population genetic analyses predicts rapid phenotypic evolution during invasion. <em>Evolutionary Applications</em>, 11(5), 781–793. <a href="https://doi.org/10.1111/eva.12594" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+        </div>
+
         <p><a href="https://scholar.google.com/citations?user=EiioDAYAAAAJ&hl=en" target="_blank">View my Google Scholar profile for a complete list <i class="fa-solid fa-up-right-from-square"></i></a></p>
     </section>
 
