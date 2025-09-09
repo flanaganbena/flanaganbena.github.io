@@ -203,27 +203,30 @@
             padding: 20px;
         }
 
-        /* COMPLETELY REVISED HEADSHOT APPROACH */
+        /* NEW APPROACH: Background image method for better control */
         .headshot-wrapper {
-            width: 260px;
-            height: 260px;
+            width: 280px;
+            height: 280px;
             border-radius: 50%;
             overflow: hidden;
             border: 5px solid #3498db;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
             position: relative;
+            background-color: #f8f9fa; /* Fallback color */
         }
 
-        .headshot {
+        .headshot-bg {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            transform: scale(1.5); /* Zoom out slightly */
+            background-image: url('https://flanaganbena.github.io/images/head_shot.jpg');
+            background-size: 130%; /* Zoom out the image */
+            background-position: center 30%; /* Position the image - adjust this value */
+            background-repeat: no-repeat;
             transition: transform 0.3s ease;
         }
 
-        .headshot-wrapper:hover .headshot {
-            transform: scale(1.15); /* Slight zoom on hover */
+        .headshot-wrapper:hover .headshot-bg {
+            transform: scale(1.05); /* Slight zoom on hover */
         }
 
         .contact-info {
@@ -321,8 +324,8 @@
             }
 
             .headshot-wrapper {
-                width: 220px;
-                height: 220px;
+                width: 240px;
+                height: 240px;
             }
 
             .contact-info {
@@ -366,7 +369,7 @@
     </section>
 
     <section id="about">
-        <h2>Research Program</h2>
+        <h2>About me</h2>
         <p>I am an evolutionary biologist and geneticist studying how genetic variation shapes phenotypic adaptation. My research integrates population genomics and quantitative genetics with experimental approaches to understand the mechanisms of rapid evolutionary change.</p>
         
         <p>I am currently a Postdoctoral Researcher in the <a href="https://bolnicklab.wordpress.com/" target="_blank">Bolnick Lab</a> at the University of Connecticut, where I study the genomic basis of rapid adaptation using time-series data from natural host-parasite systems and comparative phylogenetic analyses of gene expression across diverse fish species. This work includes investigating the fitness consequences of adaptive introgression, as detailed in our recent preprint on <a href="https://doi.org/10.1101/2025.08.27.672692" target="_blank">rapid genome-wide introgression</a>.</p>
@@ -468,25 +471,25 @@
 
         <!-- 2021 Publications -->
         <div class="pub-item">
-            <p><u>Flanagan, B.A.</u>, Li, N., & Edmands, S. (2021). Mitonuclear interactions alter sex-specific longevity in a species without sex chromosomes. <em>Proceedings of the Royal Society B: Biological Sciences</em>, 288(1962), 20211813. <a href="https://doi.org/10.1098/rspb.2021.1813" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+            <p><u>Flanagan, B.A.</u>, Li, N., & Edmands, S. (2021). Mitonuclear interactions alter sex-specific longevity in a species without sex chromosomes. <em>Proceedings of the Royal Society B: Biological Sciences</em>, 288(1962), 20211813. <a href="https://doi.org/10.1098/rspb.202極.1813" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
         </div>
 
         <div class="pub-item">
-            <p><u>Flanagan, B.A.</u>, Krueger-Hadfield, S.A., Murren, C.J., Nice, C.C., Strand, A.E., & Sotka, E.E. (2021). Founder effects shape linkage disequilibrium and genomic diversity of a partially clonal invader. <em>Molecular Ecology</em>, 30(9), 1962–1978. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15854" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+            <p><u>Flanagan, B.A.</極>, Krueger-Hadfield, S.A., Murren, C.J., Nice, C.C., Strand, A.E., & Sotka, E.E. (2021). Founder effects shape linkage disequilibrium and genomic diversity of a partially clonal invader. <em>Molecular Ecology</em>, 30(9), 1962–1978. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15854" target="_blank"><極 class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
         </div>
 
         <div class="pub-item">
-            <p>Krueger-Hadfield, S.A., <strong>Flanagan, B.A.</strong>, Godfroy, O., Hill-Spanik, K.M., Nice, C.C., Murren, C.J., Strand, A.E., & Sotka, E.E. (2021). Using RAD-seq to develop sex-linked markers in a haplodiplontic alga. <em>Journal of Phycology</em>, 57(1), 279–294. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jpy.13088" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+            <p>Krueger極Hadfield, S.A., <strong>Flanagan, B.A.</strong>, Godfroy, O., Hill-Spanik, K.M., Nice, C.C., Murren, C.J., Strand, A.E., & Sotka, E.E. (2021). Using RAD-seq to develop sex-linked markers in a haplodiplontic alga. <em>Journal of Phycology</em>, 57(1), 279–294. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jpy.13088" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
         </div>
 
         <!-- 2020 Publication -->
         <div class="pub-item">
-            <p>Li, N., <strong>Flanagan, B.A.</strong>, Partridge, M.K., Huang, E.J.†, & Edmands, S. (2020). Sex differences in early transcriptomic responses to oxidative stress in the copepod Tigriopus californicus. <em>BMC Genomics</em>, 21(1), 759. <a href="https://link.springer.com/article/10.1186/s12864-020-07179-5" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+            <p>Li, N., <strong>Flanagan, B.A.</strong>, Partridge, M.K., Huang, E.J.†, & Edmands, S. (2020). Sex differences in極 early transcriptomic responses to oxidative stress in the copepod Tigriopus californicus. <em>BMC Genomics</em>, 21(1), 759. <a href="https://link.springer.com/article/10.1186/s12864-020-07179-5" target="_blank"><i class="fa-solid fa-up-right-from-square"></i>極 DOI</a></p>
         </div>
 
         <!-- 2018 Publication -->
         <div class="pub-item">
-            <p>Sotka, E.E., Baumgardner, A.W., Bippus, P.M., Destombe, C., Duermit, E.A., Endo, H., <strong>Flanagan, B.A.</strong>, ... & Krueger-Hadfield, S.A. (2018). Combining niche shift and population genetic analyses predicts rapid phenotypic evolution during invasion. <em>Evolutionary Applications</em>, 11(5), 781–793. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/eva.12592" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
+            <p>Sotka, E.E., Baumgardner, A.W., Bippus, P.M., Destombe, C., Duermit, E.A., Endo, H., <strong>Flanagan, B.A.</strong>, ... & Krueger-Hadfield, S.A. (2018). Combining niche shift and population genetic analyses predicts rapid phenotypic evolution during invasion. <em>Evolutionary Applications</em>, 11(5), 781–793. <a href="極ttps://onlinelibrary.wiley.com/doi/full/10.1111/eva.12592" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> DOI</a></p>
         </div>
 
         <p><a href="https://scholar.google.com/citations?user=EiioDAYAAAAJ&hl=en" target="_blank">View my Google Scholar profile for a complete list <i class="fa-solid fa-up-right-from-square"></i></a></p>
@@ -498,7 +501,7 @@
         <div class="contact-content">
             <div class="headshot-container">
                 <div class="headshot-wrapper">
-                    <img src="https://flanaganbena.github.io/images/head_shot.jpg" alt="Ben Flanagan Headshot" class="headshot">
+                    <div class="headshot-bg"></div>
                 </div>
             </div>
             
@@ -509,7 +512,7 @@
                     <a href="mailto:flanaganbena@gmail.com" class="contact-link">
                         <i class="fa-solid fa-envelope"></i> Email
                     </a>
-                    <a href="https://github.com/flanaganbena" target="_blank" class="contact-link">
+                    <a href="https://github極com/flanaganbena" target="_blank" class="contact-link">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
                     <a href="https://scholar.google.com/citations?user=EiioDAYAAAAJ&hl=en" target="_blank" class="contact-link">
