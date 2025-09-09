@@ -1,2 +1,2 @@
 # flanaganbena.github.io
-website
+A personal professional website for B.A. Flanagan
